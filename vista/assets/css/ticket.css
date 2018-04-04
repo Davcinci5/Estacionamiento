@@ -1,0 +1,94 @@
+.espacio-izquierdo {
+  padding-left: 0;
+}
+
+.espSuperior {
+  margin-top: 100px;
+}
+
+.text-left {
+  text-align: left;
+}
+
+.text-right {
+  text-align: right;
+}
+/*
+.borderedAround {
+  border: 1px solid #C7CFCF;
+}
+
+.borderedRight {
+  border-right: 1px solid #C7CFCF;
+}
+
+.borderedLeft {
+  border-left: 1px solid #C7CFCF;
+}
+
+.borderedBottom {
+  border-bottom: 1px solid #C7CFCF;
+}
+*/
+.borderFinal {
+  border-bottom: 100px solid white;
+}
+
+.borderedTop {
+  border-top: 1px solid #C7CFCF;
+}
+
+.white-space-pre {
+    white-space: pre-wrap;
+}
+
+.ficha {
+  display: block;
+}
+
+.logoFichaIngreso {
+  width: 30%;
+}
+
+.espaciado {
+  letter-spacing: 5px;
+}
+
+@page
+  {
+      size:  auto;   /* auto es el valor inicial */
+      margin: 3mm;  /* afecta el margen en la configuración de impresión */
+  }
+
+h1, h2, h3, h4 {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.borde-superior {
+  margin-top: 20px;
+}
+
+.borde-inferior {
+  margin-bottom: 20px;
+}
+
+@media print {
+  #noImprimible{
+  visibility: hidden;
+  display: none;
+  }
+}
+
+.negrita {
+  font-weight: bold;
+}
+  .vacia {
+   display: none;
+  }
+
+@media screen {
+  .ficha {
+      display: none;
+  }
+}

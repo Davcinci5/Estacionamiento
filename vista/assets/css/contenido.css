@@ -1,0 +1,215 @@
+.laterales {
+  left: 0;
+  right: 0;
+}
+
+/*************************
+EXPANDIR CONTAINER
+*************************/
+.container {
+  padding-bottom: 50px;
+}
+
+/****************************
+*  CHECKBOX ADMINISTRADOR?  *
+****************************/
+
+.form-group input[type="checkbox"] {
+  display: none;
+}
+
+.form-group input[type="checkbox"] + .btn-group > label span:first-child {
+  display: none;
+}
+.form-group input[type="checkbox"] + .btn-group > label span:last-child {
+  display: inline;
+}
+
+.form-group input[type="checkbox"]:checked + .btn-group > label span:first-child {
+  display: inline-block;
+}
+.form-group input[type="checkbox"]:checked + .btn-group > label span:last-child {
+  display: none;
+}
+
+/****************************************
+AUMENTAR HEIGHT DE INPUT "PLACAS"
+****************************************/
+.btnGrande {
+  height: 59px;
+  width: 260px;
+  font-size: 25px;
+}
+
+.numFolio {
+  padding-top: 0px !important;
+}
+
+
+.inputFolio {
+  height: 40px;
+}
+
+/*********************************************
+REAJUSTAR BODY HASTA EL FINAL DE LA PANTALLA
+*********************************************/
+body{
+  height: auto;
+  min-height: 100%;
+}
+
+/****************************************
+ESTILO DE RELOJ
+******************************************/
+
+.clock {
+  width: 400px;
+  margin: 0 auto;
+  padding: 0px;
+  border: 1px solid #333;
+  color: blue;
+}
+
+#Date {
+  font-family: 'BebasNeueRegular', Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  text-align: center;
+  text-shadow: 0 0 5px #00c6ff;
+}
+
+.listaUL {
+  width: 400px;
+  margin: 0 auto;
+  padding: 0px;
+  list-style: none;
+  text-align: center;
+}
+
+.ElementosLI {
+  display: inline;
+  font-size: 4em;
+  text-align: center;
+  font-family: 'BebasNeueRegular', Arial, Helvetica, sans-serif;
+  text-shadow: 0 0 5px #00c6ff;
+}
+
+/* Simple Animation */
+@-webkit-keyframes mymove {
+  0% {opacity: 1.0;
+    text-shadow: 0 0 20px #00c6ff;
+  }
+
+  50% {
+    opacity: 0;
+    text-shadow: none;
+  }
+
+  100% {
+    opacity: 1.0;
+    text-shadow: 0 0 20px #00c6ff;
+  }
+}
+
+@-moz-keyframes mymove {
+  0% {
+    opacity: 1.0;
+    text-shadow: 0 0 20px #00c6ff;
+  }
+
+  50% {
+    opacity: 0;
+    text-shadow: none;
+  }
+
+  100% {
+    opacity: 1.0;
+    text-shadow: 0 0 20px #00c6ff;
+  };
+}
+
+.margenSup {
+  margin-top: 150px;
+}
+
+@media only screen and (max-width: 992px) {
+  /***************************************
+  ELIMINAR MARGEN SUPERIOR DE RELOJ
+  ***************************************/
+  .margenSup {
+    margin-top: 0px;
+  }
+
+  /******************************************
+  COLAPASAR INPUT
+  ******************************************/
+  .btnGrande {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+
+  .clock {
+    width: 200px;
+    margin: 0 auto;
+    padding: 0px;
+    border: 1px solid #333;
+    color: blue;
+  }
+
+  #Date {
+    font-family: 'BebasNeueRegular', Arial, Helvetica, sans-serif;
+    font-size: 9px;
+    text-align: center;
+    text-shadow: 0 0 5px #00c6ff;
+  }
+
+  .listaUL {
+    width: 200px;
+    margin: 0 auto;
+    padding: 0px;
+    list-style: none;
+    text-align: center;
+  }
+
+  .ElementosLI {
+    display: inline;
+    font-size: 2em;
+    text-align: center;
+    font-family: 'BebasNeueRegular', Arial, Helvetica, sans-serif;
+    text-shadow: 0 0 5px #00c6ff;
+  }
+}
+
+@media only screen and (max-width: 250px) {
+  .clock {
+    width: 100px;
+    margin: 0 auto;
+    padding: 0px;
+    border: 1px solid #333;
+    color: blue;
+  }
+
+  #Date {
+    font-family: 'BebasNeueRegular', Arial, Helvetica, sans-serif;
+    font-size: 9px;
+    text-align: center;
+    text-shadow: 0 0 5px #00c6ff;
+  }
+
+  .listaUL {
+    width: 100px;
+    margin: 0 auto;
+    padding: 0px;
+    list-style: none;
+    text-align: center;
+  }
+
+  .ElementosLI {
+    display: inline;
+    font-size: 1.5em;
+    text-align: center;
+    font-family: 'BebasNeueRegular', Arial, Helvetica, sans-serif;
+    text-shadow: 0 0 5px #00c6ff;
+  }
+}
